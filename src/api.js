@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE = 'https://bookreviewsbackend.onrender.com';
+const API_BASE = 'https://bookreviewsbackend.onrender.com/api';
 
 // Function to get JWT token from localStorage
 const getToken = () => localStorage.getItem('token');
@@ -19,4 +19,5 @@ client.interceptors.request.use(config => {
 });
 
 export default client;
+
 
