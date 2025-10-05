@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* simple dark-mode helper */
+:root {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #0f172a;
+}
+[data-theme="dark"] {
+  --bg: #0b1220;
+  --card: #0f172a;
+  --text: #e6eef8;
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.4s, color 0.4s;
+}
